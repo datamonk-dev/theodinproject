@@ -14,7 +14,7 @@
     <%= render CardComponent.new do |card| %>
       <%= card.with_body do %>
         <%= form_for resource, as: resource_name, url: registration_path(resource_name), builder: TailwindFormBuilder do |form| %>
-          <div class="space-y-6">
+          <div class="space-y-6 ">
             <div>
               <%= form.label :username %>
               <%= form.text_field :username, required: true, autofocus: true, class: 'dark-form-input', data: { test_id: 'username-field' } %>
@@ -35,6 +35,47 @@
               <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
             </div>
 
+            <div>
+              <%= form.label :mobile_number%>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            <div>
+              <%= form.label :college %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            <div>
+              <%= form.label :degree %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            <div>
+              <%= form.label :graduation_year %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            <div>
+              <%= form.label :city %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            <div>
+              <%= form.label :state %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            <div>
+              <%= form.label :country %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+
+            <div>
+              <%= form.label :operating_system %>
+              <%= form.password_field :password_confirmation, required: true, class: 'dark-form-input', data: { test_id: 'password-confirmation-field' } %>
+            </div>
+            
+            
             <div class="text-center">
               <%= link_to 'By signing up, you agree to our terms of use.', terms_of_use_path, class: 'font-medium text-gray-500 dark:text-gray-400 hover:underline text-sm' %>
             </div>
@@ -45,20 +86,7 @@
           </div>
         <% end %>
 
-        <div class="mt-6">
-          <div class="relative">
-            <div class="absolute inset-0 flex items-center">
-              <div class="w-full border-t border-gray-300"></div>
-            </div>
-            <div class="relative flex justify-center text-sm">
-              <p class="bg-white dark:bg-gray-800 px-2 text-gray-500 dark:text-gray-400">Or continue with</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-6 grid grid-cols-2 gap-3">
-          <%= render(Oauth::ConnectButtonComponent.with_collection(%i[github google], resource_name:)) %>
-        </div>
+     
       <% end %>
     <% end %>
   </div>
