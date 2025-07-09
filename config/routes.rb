@@ -88,6 +88,9 @@ Rails.application.routes.draw do
   resources :lessons, only: :show do
     resources :project_submissions, except: :show, controller: 'lessons/project_submissions'
     resource :completion, only: %i[create destroy], controller: 'lessons/completions'
+    resources :lessons do
+     patch :mark_complete, on: :member
+    end
   end
 
   resources :project_submissions, only: :index do
@@ -104,4 +107,7 @@ Rails.application.routes.draw do
   resources :interview_surveys, only: %i[new create]
 
   draw(:admin)
+
+
+
 end
