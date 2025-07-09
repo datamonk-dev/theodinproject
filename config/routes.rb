@@ -104,4 +104,9 @@ Rails.application.routes.draw do
   resources :interview_surveys, only: %i[new create]
 
   draw(:admin)
+
+  resources :lessons do
+    patch :mark_complete, on: :member
+  end
+
 end
