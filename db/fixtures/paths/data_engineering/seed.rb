@@ -118,8 +118,11 @@ course.add_section do |section|
     data_engineering_lessons.fetch('ETL 01_data_preprocessing Polars'),
     data_engineering_lessons.fetch('ETL 02_workflow_orchestration Intro'),
     data_engineering_lessons.fetch('ETL 02_workflow_orchestration Airflow'),
+    data_engineering_lessons.fetch('ETL 02_workflow_orchestration project_airflow'),
     data_engineering_lessons.fetch('ETL 02_workflow_orchestration Dagster'),
-    data_engineering_lessons.fetch('ETL 02_workflow_orchestration Flyte')
+    data_engineering_lessons.fetch('ETL 02_workflow_orchestration project_Dagster'),
+    data_engineering_lessons.fetch('ETL 02_workflow_orchestration Flyte'),
+    data_engineering_lessons.fetch('ETL 02_workflow_orchestration project_Flyte'),
   )
 end
 
@@ -149,7 +152,12 @@ course.add_section do |section|
   section.identifier_uuid = 'e62ae789-6bc7-496d-9404-964925944de5'
 
   section.add_lessons(
-    data_engineering_lessons.fetch('Distributed Data Processing Introduction')
+    data_engineering_lessons.fetch('Distributed Data Processing Introduction'),
+    data_engineering_lessons.fetch('kafka_Guide'),
+    data_engineering_lessons.fetch('Spark_guide'),
+    data_engineering_lessons.fetch('Distributed Data Processing Project')
+
+
   )
 end
 
