@@ -43,7 +43,7 @@ def data_engineering_lessons
     'End-to-End Project' => {
       title: 'End-to-End Project',
       description: 'End-to-End Project',
-      is_project: false,
+      is_project: true,
       github_path: '/curriculum2/03_data_engg/03_data_engineering_end_to_end/01_project.md',
       identifier_uuid: '4a0be537-c964-4f01-862b-d555319f1780',
     },
@@ -200,20 +200,41 @@ def data_engineering_lessons
       identifier_uuid: '3f68c0a7-714e-4be4-a7fd-fe957cf270bb',
     },
 
+    'ETL 02_workflow_orchestration project_airflow' => {
+      title: 'ETL Workflow Orchestration project_airflow',
+      description: 'Restructures the course',
+      is_project: true,
+      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/02_proj_airflow.md',
+      identifier_uuid: '1bf05815-3e39-4845-b055-6f665783aab3',
+    },
+
     'ETL 02_workflow_orchestration Dagster' => {
       title: 'ETL Workflow Orchestration Dagster',
       description: 'Restructures the course',
       is_project: false,
-      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/02_dagster.md',
-      identifier_uuid: '1bf05815-3e39-4845-b055-6f665783aab3',
+      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/03_dagster.md',
+      identifier_uuid: 'db14f486-c3be-4346-b3b1-e3aa088a5e4e',
     },
-
-    'ETL 02_workflow_orchestration Flyte' => {
+     'ETL 02_workflow_orchestration project_Dagster' => {
+      title: 'ETL Workflow Orchestration project_Dagster',
+      description: 'Restructures the course',
+      is_project: true,
+      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/04_proj_dagster',
+      identifier_uuid: '6231ad96-1454-498a-adea-891daf30e81a',
+    },
+     'ETL 02_workflow_orchestration Flyte' => {
       title: 'ETL Workflow Orchestration Flyte',
       description: 'Restructures the course',
       is_project: false,
-      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/03_flyte.md',
-      identifier_uuid: 'db14f486-c3be-4346-b3b1-e3aa088a5e4e',
+      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/05_flyte.md',
+      identifier_uuid: '6168ddd4-81f3-46ae-8c4a-9e71d5c68548',
+    },
+     'ETL 02_workflow_orchestration project_Flyte' => {
+      title: 'ETL Workflow Orchestration project_Flyte',
+      description: 'Restructures the course',
+      is_project: true,
+      github_path: '/curriculum2/03_data_engg/05_etl/02_workflow_orchestration/06_proj_flyte.md',
+      identifier_uuid: '6d552dc1-a6e3-4879-9596-cfc301652a36',
     },
 
     'Analytics 00_intro' => {
@@ -262,6 +283,27 @@ def data_engineering_lessons
       is_project: false,
       github_path: '/curriculum2/03_data_engg/07_distributed_data_processing/intro.md',
       identifier_uuid: 'a2a1a2b8-58dd-4562-818f-b87527bba6ef',
+    },
+    'kafka_Guide' => {
+      title: 'kafka_Guide',
+      description: 'Distributed Data Processing Introduction',
+      is_project: false,
+      github_path: '/curriculum2/03_data_engg/07_distributed_data_processing/01_kafka_guide.md',
+      identifier_uuid: '4c4a293e-7405-4512-89eb-74aff10c0f1d',
+    },
+    'Spark_guide' => {
+      title: 'Spark_guide',
+      description: 'Distributed Data Processing Introduction',
+      is_project: false,
+      github_path: '/curriculum2/03_data_engg/07_distributed_data_processing/02_spark.md',
+      identifier_uuid: '1f9329da-6d61-49e8-9be4-b6cb0856d51e',
+    },
+    'Distributed Data Processing Project' => {
+      title: 'Distributed Data Processing Project',
+      description: 'Distributed Data Processing Introduction',
+      is_project: true,
+      github_path: '/curriculum2/03_data_engg/07_distributed_data_processing/03_project.md',
+      identifier_uuid: '311071d8-cb49-41df-97bf-fcfcd58b169d',
     }
   }
 end
