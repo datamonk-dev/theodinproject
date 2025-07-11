@@ -34,18 +34,7 @@
                 <%= form.email_field :email, class: 'dark-form-input', data: { test_id: 'email-field' } %>
               </div>
 
-              <div class="col-span-6 sm:col-span-6">
-                <%= form.label :learning_goal %>
-                <%= form.text_area :learning_goal, class: 'dark-form-input', placeholder: 'I wanna be the very best...', rows: 4, data: { test_id: 'learning-goal-field' }, autofocus: params[:learning_goal].present? %>
-              </div>
 
-              <div class="col-span-6">
-                <%= form.label :avatar %>
-                <div class="flex items-center">
-                  <%= render User::AvatarComponent.new(current_user:, classes: 'w-16') %>
-                </div>
-                  <p class="text-sm text-gray-500 mt-2 dark:text-gray-400">Avatar can be grabbed from Github or Google when signing in with those services.</p>
-              </div>
             </div>
           <% end %>
           <% card.with_footer(classes: 'px-4 py-3 pt-3 bg-gray-50 text-right sm:px-6 dark:bg-gray-700/40 rounded-b-lg') do %>

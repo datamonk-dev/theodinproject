@@ -42,6 +42,8 @@ module Lessons
     def update
       @project_submission = current_user.project_submissions.find(params[:id])
 
+      @project_submission.is_approved = nil
+
       respond_to do |format|
         if @project_submission.update(project_submission_params)
           format.html { redirect_to lesson_path(@lesson), notice: 'Project updated' }
