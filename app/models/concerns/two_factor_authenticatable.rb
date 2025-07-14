@@ -8,7 +8,7 @@ module TwoFactorAuthenticatable
   end
 
   def two_factor_qr_code_uri
-    otp_provisioning_uri(email, issuer: 'The Odin Project')
+    otp_provisioning_uri(email, issuer: 'DataMonk')
   end
 
   def enable_two_factor!

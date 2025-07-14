@@ -7,7 +7,7 @@ module ApplicationHelper
   end
 
   def title(input = nil)
-    content_for(:title) { "#{input} | The Odin Project" } if input
+    content_for(:title) { "#{input} | DataMonk" } if input
   end
 
   def sign_up_or_view_curriculum_button

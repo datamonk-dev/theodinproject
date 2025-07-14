@@ -7,7 +7,7 @@ RSpec.describe UserMailer do
     let(:user) { create(:user, email: 'kevin@example.com') }
 
     it 'renders the correct sender address' do
-      expect(welcome_email.from).to eql(['contact@theodinproject.com'])
+      expect(welcome_email.from).to eql(['rgupta.datamonk@gmail.com'])
     end
 
     it 'renders The Odin Project logo' do
