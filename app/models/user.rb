@@ -13,10 +13,12 @@ class User < ApplicationRecord
           presence: true,
           format: { with: /\A[6-9]\d{9}\z/, message: 'must be a valid 10-digit mobile number' }
 
-  validates :username, :email, :password, :password_confirmation,
+  validates :username, :email,
             :mobile_number, :college, :degree, :graduation_year,
             :city, :state, :country, :operating_system, :resume,
             presence: true
+  validates :password, presence: true, confirmation: true, if: :password_required?
+
 
   validates :learning_goal, length: { maximum: 1700 }
   validates :graduation_year, numericality: {
@@ -103,6 +105,11 @@ class User < ApplicationRecord
       project_submissions.each(&:discard)
       update!(banned: true)
     end
+  end
+
+
+  def password_required?
+    new_record? || password.present?
   end
 
   private
