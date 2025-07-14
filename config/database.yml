@@ -26,8 +26,11 @@ test: &test
 production:
   adapter: postgresql
   encoding: unicode
-  database: db/production
-  pool: 10
+  database: datamonk_production
+  host: localhost 
+  port: 5432
+  timeout: 5000
+  pool: 5
   username:
   password:
 

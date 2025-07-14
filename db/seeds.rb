@@ -17,7 +17,7 @@ SeedFu.seed
 load './db/seeds/success_stories.rb'
 
 # GENERATE test projects
-load './db/seeds/test_project_submissions.rb'
+# load './db/seeds/test_project_submissions.rb'
 
 # GENERATE users and admin users for testing
 load './db/seeds/test_users_and_admins.rb'
