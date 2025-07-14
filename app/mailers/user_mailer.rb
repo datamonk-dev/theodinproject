@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'DataMonk <contact@theodinproject.com>'
+  default from: 'DataMonk <rgupta.datamonk@gmail.com>'
 
   def send_welcome_email_to(user)
     @user = user
