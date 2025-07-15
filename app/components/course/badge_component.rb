@@ -21,7 +21,7 @@ class Course::BadgeComponent < ApplicationComponent
   end
 
   def fallback_icon
-    'icons/datamonk.svg'
+    'icons/odin-icon.svg'
   end
 
   def size
