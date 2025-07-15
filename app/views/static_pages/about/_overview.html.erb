@@ -12,14 +12,14 @@
 
       <%= render CardComponent.new(classes: 'col-span-3 lg:col-span-1') do |card| %>
         <% card.with_body(classes: 'text-center') do %>
-          <p class="font-bold text-2xl">10</p>
+          <p class="font-bold text-2xl"><%= number_with_delimiter(Path.count) %></p>
           <p class="text-gray-500 dark:text-gray-400">Course</p>
         <% end %>
       <% end %>
 
       <%= render CardComponent.new(classes: 'col-span-3 lg:col-span-1') do |card| %>
         <% card.with_body(classes: 'text-center') do %>
-          <p class="font-bold text-2xl">2024</p>
+          <p class="font-bold text-2xl">2025</p>
           <p class="text-gray-500 dark:text-gray-400">Founded</p>
         <% end %>
       <% end %>
@@ -32,21 +32,21 @@
 
           <% card.with_body(classes: 'prose prose-gray max-w-none dark:prose-invert text-gray-500 dark:text-gray-300') do %>
             <p>
-             Learn with Datamonk offers a free, open-source coding curriculum that’s fully accessible online. 
-             Since its launch, it has helped countless learners break into tech — 
+             Learn with Datamonk offers a free, open-source coding curriculum that’s fully accessible online.
+             Since its launch, it has helped countless learners break into tech —
              from landing developer jobs to building their own personal and freelance projects.
             </p>
             <p>
-              Founded by Rahul Gupta, Datamonk is now maintained and continuously 
-              improved by a dedicated team of contributors, many of whom started their journey right here. 
-              The curriculum stands out for its project-based, hands-on approach and is carefully curated 
+              Founded by Rahul Gupta, Datamonk is now maintained and continuously
+              improved by a dedicated team of contributors, many of whom started their journey right here.
+              The curriculum stands out for its project-based, hands-on approach and is carefully curated
               to stay relevant with current industry practices and technologies.
             </p>
           <% end %>
         <% end %>
       </div>
 
-  
+
     </div>
   </div>
 </section>

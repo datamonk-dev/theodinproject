@@ -285,7 +285,7 @@ def data_engineering_lessons
       title: 'Distributed Data Processing Introduction',
       description: 'Distributed Data Processing Introduction',
       is_project: false,
-      github_path: '/curriculum2/03_data_engg/07_distributed_data_processing/intro.md',
+      github_path: '/curriculum2/03_data_engg/07_distributed_data_processing/00_intro.md',
       identifier_uuid: 'a2a1a2b8-58dd-4562-818f-b87527bba6ef',
     },
     'kafka_Guide' => {

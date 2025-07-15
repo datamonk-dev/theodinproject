@@ -1,5 +1,5 @@
 class ProjectSubmission < ApplicationRecord
-  has_one_attached :image
+  has_many_attached :images
   include Discard::Model
   include Likeable
 
@@ -10,7 +10,7 @@ class ProjectSubmission < ApplicationRecord
   belongs_to :user
   belongs_to :lesson
   has_many :flags, dependent: :destroy
-  validates :repo_url, url: true, allow_blank: true
+  validates :repo_url, url: true
   validates :live_preview_url, url: true, allow_blank: true
   validate :live_preview_allowed
   validates :user_id, uniqueness: { scope: :lesson_id, message: 'You have already submitted a project for this lesson' }
