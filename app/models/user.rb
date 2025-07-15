@@ -13,8 +13,8 @@ class User < ApplicationRecord
           presence: true,
           format: { with: /\A[6-9]\d{9}\z/, message: 'must be a valid 10-digit mobile number' }
 
-  validates :username, :email,
-            :mobile_number, :college, :degree, :graduation_year,
+  validates :username, uniqueness: true, presence: true
+  validates :email, :mobile_number, :college, :degree, :graduation_year,
             :city, :state, :country, :operating_system, :resume,
             presence: true
   validates :password, presence: true, confirmation: true, if: :password_required?

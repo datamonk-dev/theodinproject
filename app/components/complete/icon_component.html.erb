@@ -2,22 +2,22 @@
   <% if lesson.locked_for?(current_user) %>
     <%= button_to lesson_completion_path(lesson.id, icon_only: true), method: :delete, form_class: 'group', class: 'relative hover:cursor-pointer', data: { complete: @lesson.completed?, test_id: 'complete-button' } do %>
       <span class="group-aria-busy:opacity-0 transition-opacity delay-100">
-        <%= inline_svg_tag 'icons/lock.svg', class: "h-7 sm:h-8 text-teal-600 #{animation_class}", aria: true, title: 'check', desc: 'checkmark icon' %>
+        <%= inline_svg_tag 'icons/lock.svg', class: 'h-5 w-5 shrink-0 text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200', aria: true, title: 'check', desc: 'checkmark icon' %>
       </span>
 
       <span class="group-aria-busy:opacity-100 opacity-0 absolute inset-0 flex items-center justify-center transition-opacity delay-100">
-         <%= inline_svg_tag 'icons/unlock.svg', class: 'h-6 sm:h-7 animate-spin text-gray-400', aria: true %>
+         <%= inline_svg_tag 'icons/unlock.svg', class: 'h-5 w-5 shrink-0 text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200', aria: true %>
       </span>
     <% end %>
   <% else %>
     <%= button_to lesson_completion_path(lesson.id, icon_only: true), form_class: 'group', class: 'relative hover:cursor-pointer', data: { complete: @lesson.completed?, test_id: 'complete-button' } do %>
 
       <span class="group-aria-busy:opacity-0 transition-opacity delay-100">
-        <%= inline_svg_tag 'icons/unlock.svg', class: 'h-7 sm:h-8 text-gray-400 dark:text-gray-600', aria: true, title: 'check', desc: 'checkmark icon' %>
+        <%= inline_svg_tag 'icons/unlock.svg', class: 'h-5 w-5 shrink-0 text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200', aria: true, title: 'check', desc: 'checkmark icon' %>
       </span>
 
       <span class="group-aria-busy:opacity-100 opacity-0 absolute inset-0 flex items-center justify-center transition-opacity delay-100">
-         <%= inline_svg_tag 'icons/lock.svg', class: 'h-6 sm:h-7 animate-spin text-gray-400', aria: true %>
+         <%= inline_svg_tag 'icons/lock.svg', class: 'h-5 w-5 shrink-0 text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200', aria: true %>
       </span>
     <% end %>
   <% end %>

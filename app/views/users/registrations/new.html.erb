@@ -21,7 +21,7 @@
             <div>
               <%= form.label :username %>
               <%= form.text_field :username, required: true, autofocus: true,
-                                  class: 'dark-form-input w-full', data: { test_id: 'username-field' } %>
+                                  class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600', data: { test_id: 'username-field' } %>
               <% if form.object.errors[:username].any? %>
                 <p class="mt-1 text-sm text-red-600 dark:text-red-400">
                   <%= form.object.errors[:username].first %>
@@ -32,7 +32,7 @@
             <div>
               <%= form.label :email %>
               <%= form.email_field :email, required: true,
-                                   class: 'dark-form-input w-full', data: { test_id: 'email-field' } %>
+                                   class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600', data: { test_id: 'email-field' } %>
               <% if form.object.errors[:email].any? %>
                 <p class="mt-1 text-sm text-red-600 dark:text-red-400">
                   <%= form.object.errors[:email].first %>
@@ -43,7 +43,7 @@
             <div>
               <%= form.label :password %>
               <%= form.password_field :password, required: true,
-                                       class: 'dark-form-input w-full', data: { test_id: 'password-field' } %>
+                                       class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600', data: { test_id: 'password-field' } %>
               <% if form.object.errors[:password].any? %>
                 <p class="mt-1 text-sm text-red-600 dark:text-red-400">
                   <%= form.object.errors[:password].first %>
@@ -54,7 +54,7 @@
             <div>
               <%= form.label :password_confirmation %>
               <%= form.password_field :password_confirmation, required: true,
-                                       class: 'dark-form-input w-full', data: { test_id: 'password-confirmation-field' } %>
+                                       class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600', data: { test_id: 'password-confirmation-field' } %>
               <% if form.object.errors[:password_confirmation].any? %>
                 <p class="mt-1 text-sm text-red-600 dark:text-red-400">
                   <%= form.object.errors[:password_confirmation].first %>
@@ -64,7 +64,7 @@
 
             <div>
               <%= form.label :mobile_number %>
-              <%= form.telephone_field :mobile_number, placeholder: 'Enter 10 digit number', class: 'dark-form-input w-full' %>
+              <%= form.telephone_field :mobile_number, placeholder: 'Enter 10 digit number', class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600' %>
               <% if form.object.errors[:mobile_number].any? %>
                 <p class="mt-1 text-sm text-red-600 dark:text-red-400">
                   <%= form.object.errors[:mobile_number].first %>
@@ -74,17 +74,17 @@
 
             <div>
               <%= form.label :college %>
-              <%= form.text_field :college, class: 'dark-form-input w-full' %>
+              <%= form.text_field :college, class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600' %>
             </div>
 
             <div>
               <%= form.label :degree %>
-              <%= form.text_field :degree,  placeholder: "e.g., B.Tech, M.S.", class: 'dark-form-input w-full' %>
+              <%= form.text_field :degree,  placeholder: "e.g., B.Tech, M.S.", class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600'%>
             </div>
 
             <div>
               <%= form.label :graduation_year %>
-              <%= form.number_field :graduation_year, class: 'dark-form-input w-full', required: true, min: 1950, max: 2050 %>
+              <%= form.number_field :graduation_year, class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600', required: true, min: 1950, max: 2050 %>
               <% if form.object.errors[:graduation_year].any? %>
                 <p class="mt-1 text-sm text-red-600 dark:text-red-400">
                   <%= form.object.errors[:graduation_year].first %>
@@ -95,17 +95,17 @@
 
             <div>
               <%= form.label :city %>
-              <%= form.text_field :city, class: 'dark-form-input w-full' %>
+              <%= form.text_field :city, class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600' %>
             </div>
 
             <div>
               <%= form.label :state %>
-              <%= form.text_field :state, class: 'dark-form-input w-full' %>
+              <%= form.text_field :state,class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600' %>
             </div>
 
             <div>
               <%= form.label :country %>
-              <%= form.text_field :country, class: 'dark-form-input w-full' %>
+              <%= form.text_field :country, class: 'w-full rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600'%>
             </div>
 
             <div>

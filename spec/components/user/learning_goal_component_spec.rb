@@ -20,8 +20,8 @@ RSpec.describe User::LearningGoalComponent, type: :component do
       render_inline(component)
 
       expect(page).to have_link(
-        "What's your learning goal?",
-        href: '/users/profile/edit?learning_goal=true'
+        "Profile",
+        href: '/users/profile/'
       )
     end
   end

@@ -13,7 +13,7 @@ class User::LearningGoalComponent < ApplicationComponent
 
   def settings_link
     link_to(
-      "What's your learning goal?",
+      "Profile",
       edit_users_profile_path(learning_goal: true),
       class: 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 underline'
     )
