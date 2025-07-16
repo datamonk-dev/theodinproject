@@ -4,10 +4,12 @@ module Admin
 
     def index
       if params[:search_term].present?
-        @pagy, @learners = pagy(User.search_by(params[:search_term]), items: 20)
+        users = User.search_by(params[:search_term]).order(created_at: :desc)
       else
-        @pagy, @learners = pagy(User.all, items: 20)
+        users = User.order(created_at: :desc)
       end
+
+      @pagy, @learners = pagy(users, items: 20)
     end
 
     def show
